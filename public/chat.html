@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="chatStyle.css">
+    <title>Chat Room</title>
+</head>
+<body>
+    <div class="container">
+        <div class="friend">
+            <div style="padding : 0.5vw 2vw;box-sizing: border-box; height:50px;">
+                <p id="usernameHi">Hi, USER </p>
+            </div>
+            <div class="listFriend">
+                <ul class="friends" style="list-style-type: none;">
+                    <li onclick="changeRoom('Room#1')" style="display: block;">
+                        <div style="display: flex;align-items: center;">
+                            <div class="pp"><img src="./profile.png" alt="" ></div><span>Room#1</span>
+                        </div>
+                        <div style="padding-left: 5vw;color : black;font-size : 0.8em" class="memberList">
+                            <p>Bubu</p>
+                            <p>Baba</p>
+                        </div>
+                    </li>
+                        
+                    <li onclick="changeRoom('Room#2') " style="display: block;">
+                        <div style="display: flex;align-items: center;">
+                            <div class="pp"><img src="./profile.png"  alt=""></div><span>Room#2</span>
+                        </div>
+                        <div style="padding-left: 5vw;color : black;font-size : 0.8em" class="memberList2">
+                            <p>Bubu</p>
+                            <p>Baba</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="chat">
+            <div class="topDiv">
+                <div class="pp"><img src="./profile.png" alt=""></div><span id="roomName">Bambang</span>
+            </div>
+            <div class="chatHistory">
+<!-- 
+                <div class="myChat">
+                    <p>USER(me)&nbsp&nbsp</p>
+                    <div class="bubble">
+                        <p>Bambang</p>
+                    </div>
+                </div>
+                <div class="adminChat">
+                    <p>Andrew has joined chat</p>
+                </div>
+                <div class="myChat">
+                    <p>USER(me)&nbsp&nbsp</p>
+                    <div class="bubble">
+                        <p>Bembengg</p>
+                    </div>
+                </div>
+
+                <div class="reply">
+                    <p>Bambang</p>
+                    <div class="replyBubble">
+                        <p>Hii</p>
+                    </div>
+                </div> -->
+
+            </div>
+            <div class="messageText">
+                <textarea name="message" id="messageArea" cols="30" rows="10" placeholder="Input message here.."></textarea>
+            </div>
+        </div>
+        
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./chat.js"></script>
+</body>
+</html>

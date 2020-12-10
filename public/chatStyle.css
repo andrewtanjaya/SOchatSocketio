@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background: #ff00cc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff00cc, #333399); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff00cc, #333399); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    width : 50vw;
+    height: 80vh;
+    margin : 10vh auto;
+    background-color: white;
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 0px 0px 45px -11px rgba(0,0,0,0.83);
+}
+
+.friend{
+    color : #ff00cc;
+    width: 35%;
+    height: 100%;
+    background-color:  rgb(231, 231, 231);
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+}
+
+.friends{
+    padding: 0px;
+
+}
+
+.friends li{
+    display: flex;
+    align-items: center;
+    color : #ff00cc;
+    padding: 5px;
+    margin-top: 5px;
+}
+    
+.friends li:hover{
+    background-color: white ;
+}
+
+.chat{
+    position : absolute;
+    top : 0;
+    right: 0;
+    background-color: white;
+    z-index: 2;
+    width: 65%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+}
+
+.pp{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.pp img{
+    width: 100%;
+    height: 100%;
+}
+
+.listFriend{
+    position: absolute;
+    z-index: 1;
+    width: 35%;
+    margin-top: 2.5vh;
+    background-color:  rgb(243, 243, 243);
+    padding: 0.5vw 1vw ;
+    height: 88.4%;
+    border-radius: 20px 20px 0 20px;
+    box-shadow: 0px -4px 20px -8px rgba(50, 50, 50, 0.75);
+    box-sizing: border-box;
+}
+
+.topDiv{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2vw;
+    border-bottom: 1px solid rgba(202, 202, 202, 0.75);
+}
+
+.chatHistory{
+    width: 100%;
+    height: 70%;
+    overflow-y: auto;
+}
+
+.messageText{
+    width: 100%;
+    height: 14%;
+    background-color: white;
+    border-top: 1px solid rgba(202, 202, 202, 0.75);
+    border-radius: 0 0 20px 0;
+}
+
+#messageArea{
+    width: 99.1%;
+    height: 100%;
+    padding: 20px;
+    border: none;
+    resize: none;
+    border-radius: 0 0 20px 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+#messageArea:focus{
+    width: 99.1%;
+    height: 100%;
+    border: none;
+    resize: none;
+    border-radius: 0 0 20px 0;
+    outline: none;   
+}
+
+.myChat{
+    font-size: 0.6em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    min-width: 10vw;
+    min-height: 5vh;
+    text-align: right;
+    justify-content: right;
+    margin-right: 15px;
+}
+
+.myChat p{
+    margin: 0px;
+
+}
+
+.bubble{
+    color: white;
+    background-color: #ff00cc;
+    font-size: 1.2em;
+    min-height: 4vh;
+    box-sizing: border-box;
+    padding: 1vh;
+    max-width: 30%;
+    border-radius: 20px;
+    margin-left: auto;
+    word-wrap: break-word;
+}
+
+.reply{
+    font-size: 0.6em;
+    margin-top: 15px;
+    min-width: 10vw;
+    min-height: 5vh;
+    text-align: left;
+    justify-content: left;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.reply p{
+    margin: 0px;
+
+}
+
+.replyBubble{
+    color: white;
+    background-color: #ff00cc;
+    font-size: 1.2em;
+    min-height: 4vh;
+    box-sizing: border-box;
+    padding: 1vh 1vw;
+    max-width: 30%;
+    border-radius: 20px;
+    word-wrap: break-word;
+}
+
+.adminChat{
+    width: 40%;
+    height: 5%;
+    padding-top: 2%;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(202, 202, 202, 0.75);
+    font-size: 10%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
